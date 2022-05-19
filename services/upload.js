@@ -1,4 +1,13 @@
-module.exports = function(filename, destination) {
+const cloudinary = require('cloudinary');
+
+/**
+ * Creates a new Photo in Cloudinary
+ *
+ * @param {string} filename - The name and path of the file to upload
+ * @param {string} destination - The destination in Cloudinary where the 
+ * file will be uploaded
+ */
+module.exports = async (filename, destination) => {
     if (!filename) {
         throw Error("You must provide a file to upload");
     }
@@ -11,14 +20,18 @@ module.exports = function(filename, destination) {
         throw Error("You must provide a destination to upload to");
     }
 
-    //await cloudinary.v2.uploader.upload(filename, {
-    //  resource_type: "photo", 
-    //  public_id: destination,
-    //  overwrite: true, 
-    //  notification_url: "https://mysite.example.com/notify_endpoint"
-    //}, function(error, result) {
-    //  console.log(result, error)
-    //});
+    const upload = cloudinary.v2.uploader.upload(filename, {
+      resource_type: "photo", 
+      public_id: destination,
+      overwrite: true, 
+      notification_url: "https://mysite.example.com/notify_endpoint"
+    }, function(error, result) {
+      console.log(result, error)
+    });
+    
+    console.log(upload);
 
-    return filename
+    return new Promise((resolve, reject) => {
+        resolve(filename)
+    })
 }

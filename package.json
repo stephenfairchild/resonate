@@ -18,5 +18,8 @@
   "homepage": "https://github.com/stephenfairchild/resonate#readme",
   "devDependencies": {
     "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "cloudinary": "^1.30.0"
   }
 }
