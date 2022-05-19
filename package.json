@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/stephenfairchild/resonate/issues"
   },
-  "homepage": "https://github.com/stephenfairchild/resonate#readme"
+  "homepage": "https://github.com/stephenfairchild/resonate#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
 }
