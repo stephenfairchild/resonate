@@ -4,6 +4,11 @@ A simple Photo API that can store and retrieve photos from Cloudinary.
 
 ## Usage
 
+You'll need to have the following environment variables defined:
+cloud_name, api_key, api_secret
+
+The app expects these to be in place, and you can get these credentials from Cloudinary.
+
 ### Upload a file
 
 ```sh
