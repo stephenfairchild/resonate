@@ -1,6 +1,6 @@
 # Resonate
 
-A simple Photo API that can store and retrieve photos from Cloudinary.
+A simple Photo API that can store and retrieve photos from Cloudinary. Resonate exposes a single GET and POST endpoint that can be used to manage your photos. You'll need to have a Cloudinary account and then create a folder. Your folder name will be your `app` id when communicating with this API.  
 
 ## Usage
 
