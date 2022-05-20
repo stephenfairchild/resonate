@@ -1,6 +1,6 @@
 # Resonate
 
-A simple Photo API that can store and retrieve a Photo from Cloudinary.
+A simple Photo API that can store and retrieve photos from Cloudinary.
 
 ## Usage
 
