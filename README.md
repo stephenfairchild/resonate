@@ -31,4 +31,4 @@ Identity: `/api?identity=<your-identity>`
 
 ## TODO
 
-- Allow sending multiple photos at once.
+- Allow uploading multiple photos at once.
