@@ -8,23 +8,18 @@ A simple Photo API that can store and retrieve a Photo from Cloudinary.
 
 ```sh
 curl -X POST "https://<your-domain>/api" \
-  -H "Content-Type: application/json" \
-  -H "X-API-Key: <your-key>" \
+  -H "x-app-id: <your-photo-subfolder>" \
   -F 'photo=@<path-to-file>' 
 ```
 
-### Download a file
+### Get a list of files
 
 ```sh
 curl -X GET "https://<your-domain>/api" \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: <your-key>" \
-  -d '{
-    "location": <destination-folder-in-cloud>
-  }'
+  -H "x-app-id: <your-photo-subfolder>"
 ```
 
 ## TODO
 
 - Allow sending multiple photos at once.
-- Allow receiving single photos
