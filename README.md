@@ -20,6 +20,12 @@ curl -X GET "https://<your-domain>/api" \
   -H "x-app-id: <your-photo-subfolder>"
 ```
 
+#### Available filters
+
+If you don't pass any query parameters, a limit of 100 photos will be returned. You can filter with the following parameters:
+
+Identity: `/api?identity=<your-identity>`
+
 ## TODO
 
 - Allow sending multiple photos at once.
